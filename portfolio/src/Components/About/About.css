@@ -1,0 +1,36 @@
+.about {
+  /* border: 1px solid blue; */
+  background-image: url("https://res.cloudinary.com/headincloud/image/upload/v1593861140/aboutbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 38px;
+  padding: 40px;
+  width: 100vw;
+}
+
+/* 557391 */
+
+.about_container {
+  margin: 0 auto;
+  padding: 30px;
+  width: 700px;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr auto;
+}
+
+@media only screen and (max-width: 425px) {
+  .about {
+    background-size: 150%;
+    margin-top: 27px;
+    padding: 40px 20px;
+  }
+  .about_container {
+    width: 80%;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+  }
+}

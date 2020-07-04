@@ -1,0 +1,18 @@
+.avatar {
+  width: 90px;
+  height: 90px;
+  margin: 10px auto;
+  background-image: url("https://res.cloudinary.com/headincloud/image/upload/v1593861162/myavatar.png");
+  background-size: cover;
+  background-position: 10% 40%;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 2px white, 0 0 0 3.5px #34495e;
+}
+
+@media only screen and (max-width: 425px) {
+  .avatar {
+    grid-column: 1/2;
+    margin: 0 auto 20px auto;
+  }
+}

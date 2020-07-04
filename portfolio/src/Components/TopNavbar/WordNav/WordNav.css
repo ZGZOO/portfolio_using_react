@@ -1,0 +1,30 @@
+.wordNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  margin-right: 40px;
+  /* border: 1px solid red; */
+}
+
+/* wordNav will be out of the right screen
+if I don't have margin-right */
+/* I added box-sizing: border-box; */
+
+.wordNav a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 425px) {
+  .wordNav {
+    width: 150px;
+    margin-right: 10px;
+  }
+
+  .wordNav a {
+    font-size: 8px;
+  }
+}
