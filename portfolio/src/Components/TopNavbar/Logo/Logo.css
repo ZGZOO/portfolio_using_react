@@ -13,6 +13,7 @@ a {
 
 a img {
   width: 20px;
+  height: 20px;
 }
 
 @media only screen and (max-width: 425px) {
@@ -24,5 +25,6 @@ a img {
   }
   a img {
     width: 10px;
+    height: 10px;
   }
 }
