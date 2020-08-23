@@ -1,0 +1,115 @@
+.phoneNavbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  background-color: rgb(55, 168, 27);
+  display: flex;
+}
+
+.phoneNavbar__container {
+  width: 100%;
+  margin: 0 auto;
+  //   border: 1px solid red;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.phoneNavbar__container__link {
+  //   border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  min-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.phoneNavbar__container__link:focus {
+  color: blue;
+}
+
+.phoneNavbar__container__link__icon {
+  font-size: 25px;
+}
+
+.phoneNavbar__container__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  min-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.socialFocus {
+  color: blue;
+}
+
+.socialMedia {
+  position: fixed;
+  bottom: 55px;
+  right: 0px;
+  width: 150px;
+  height: 150px;
+  padding-top: 20px;
+  background: peru;
+  -webkit-clip-path: circle(90% at 100% 100%);
+  clip-path: circle(90% at 100% 100%);
+  transition: clip-path 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  a {
+    font-size: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .mediaIcon {
+      font-size: 30px;
+    }
+  }
+
+  a:active {
+    color: purple;
+  }
+
+  .socialMediaBox {
+    .socialMediaRollTwo {
+      padding-top: 13px;
+      padding-right: 15px;
+      display: flex;
+      flex-direction: row;
+
+      .emailGroup {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+.mediaHidden {
+  -webkit-clip-path: circle(0% at 100% 100%);
+  clip-path: circle(0% at 100% 100%);
+}
+
+@media only screen and (min-width: 768px) {
+  .phoneNavbar {
+    display: none;
+  }
+}
