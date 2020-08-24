@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "./About.scss";
 import Avatar from "./Avatar/Avatar";
 import Hi from "./Hi/Hi";
 import Skills from "./Skills/Skills";
@@ -7,7 +7,7 @@ import Skills from "./Skills/Skills";
 export default function About() {
   return (
     <div className="about" id="about">
-      <div className="about_container">
+      <div className="about__container">
         <Avatar />
         <Hi />
         <Skills />
