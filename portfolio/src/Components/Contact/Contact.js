@@ -1,16 +1,14 @@
 import React from "react";
-import "./Contact.css";
+import "./Contact.scss";
 
 export default function Contact() {
   return (
     <div className="contact_me" id="contact">
       <p>Contact Me</p>
       <form className="contact_form" action="index.html" method="post">
-        {/* Have 'required' to make it required */}
         <input
-          id="input1"
           type="text"
-          className="contact_form_text"
+          className="contact_form_text name_input"
           placeholder="Name (First & Last)"
           required
         />
