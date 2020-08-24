@@ -1,11 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.scss";
 
 export default function Contact() {
+  const [status, setStatus] = useState("");
+
+  const handleContactSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        setStatus("SUCCESS");
+      } else {
+        setStatus("ERROR");
+      }
+    };
+    xhr.send(data);
+  };
+
   return (
     <div className="contact_me" id="contact">
       <p>Contact Me</p>
-      <form className="contact_form" action="index.html" method="post">
+      <form
+        className="contact_form"
+        action="https://formspree.io/xgenrbbn"
+        method="POST"
+        onSubmit={handleContactSubmit}
+      >
         <input
           type="text"
           className="contact_form_text name_input"
@@ -28,7 +54,11 @@ export default function Contact() {
           placeholder="Message"
           required
         ></textarea>
-        <input type="submit" className="contact_form_button" value="Send" />
+        <input
+          type="submit"
+          className="contact_form_button"
+          value="Send"
+        />
       </form>
 
       <nav class="contactinfo">

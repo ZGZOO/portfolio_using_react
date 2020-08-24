@@ -3,15 +3,15 @@ import { HashLink as Link } from "react-router-hash-link";
 import "./PhoneSizeNavBar.scss";
 
 const PhoneSizeNavBar = () => {
-  const [isSocialClicked, setIsSocialClicked] = useState(false);
+  const [isContactClicked, setIsContactClicked] = useState(false);
 
-  const handleSocialClick = () => {
+  const handleContactClick = () => {
     console.log("clicked!");
-    setIsSocialClicked(!isSocialClicked);
+    setIsContactClicked(!isContactClicked);
   };
 
   const hideSocialMedia = () => {
-    setIsSocialClicked(false);
+    setIsContactClicked(false);
   };
 
   return (
@@ -45,31 +45,43 @@ const PhoneSizeNavBar = () => {
           className="phoneNavbar__container__link"
           onClick={hideSocialMedia}
         >
-          <i className="far fa-handshake phoneNavbar__container__link__icon"></i>
-          <span>contact</span>
+          <i className="far fa-file-alt phoneNavbar__container__link__icon"></i>
+          <span>resume</span>
         </Link>
         <Link
           className={`phoneNavbar__container__social ${
-            isSocialClicked ? "socialFocus" : ""
+            isContactClicked ? "socialFocus" : ""
           }`}
-          onClick={handleSocialClick}
+          onClick={handleContactClick}
         >
-          <i className="fas fa-share-alt phoneNavbar__container__link__icon"></i>
-          <span>social</span>
+          <i className="far fa-handshake phoneNavbar__container__link__icon"></i>
+          <span>contact</span>
         </Link>
-        <div className={`socialMedia ${isSocialClicked ? "" : "mediaHidden"}`}>
+        <div className={`socialMedia ${isContactClicked ? "" : "mediaHidden"}`}>
           <div className="socialMediaBox">
             <div className="socialMediaRollOne">
-              <a className="githubGroup" href="https://github.com/ZGZOO" target="_blank">
+              <a
+                className="githubGroup"
+                href="https://github.com/ZGZOO"
+                target="_blank"
+              >
                 <i class="fab fa-github mediaIcon githubIcon"></i>github
               </a>
             </div>
 
             <div className="socialMediaRollTwo">
-              <a className="linkedinGroup" href="https://www.linkedin.com/in/jennyzhijiexu/" target="_blank">
+              <a
+                className="linkedinGroup"
+                href="https://www.linkedin.com/in/jennyzhijiexu/"
+                target="_blank"
+              >
                 <i class="fab fa-linkedin mediaIcon linkedinIcon"></i>linkedin
               </a>
-              <a className="emailGroup" href="mailto: jennyxu000@gmail.com" target="_blank">
+              <a
+                className="emailGroup"
+                href="mailto: jennyxu000@gmail.com"
+                target="_blank"
+              >
                 <i class="fas fa-paper-plane mediaIcon emailIcon"></i>email
               </a>
             </div>
