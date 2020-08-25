@@ -1,5 +1,5 @@
 import React from "react";
-import "./WordNav.css";
+import "./WordNav.scss";
 import { HashLink as Link } from "react-router-hash-link";
 
 export default function WordNav() {

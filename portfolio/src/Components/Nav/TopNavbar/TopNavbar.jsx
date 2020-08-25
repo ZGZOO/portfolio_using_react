@@ -1,5 +1,5 @@
 import React from "react";
-import "./TopNavbar.css";
+import "./TopNavbar.scss";
 import WordNav from "../WordNav/WordNav";
 import Logo from "../Logo/Logo";
 

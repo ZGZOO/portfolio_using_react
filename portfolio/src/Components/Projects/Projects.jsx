@@ -1,6 +1,6 @@
-import React from "./node_modules/react";
-import "./Projects.css";
-import $ from "./node_modules/jquery";
+import React from "react";
+import "./Projects.scss";
+import $ from "jquery";
 
 export default function Projects() {
   //pull data from google sheet via API call
