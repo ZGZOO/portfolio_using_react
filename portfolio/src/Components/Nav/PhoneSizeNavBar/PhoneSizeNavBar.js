@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { HashLink as Link } from "react-router-hash-link";
+import React, { useState } from "./node_modules/react";
+import { HashLink as Link } from "./node_modules/react-router-hash-link";
 import "./PhoneSizeNavBar.scss";
 
 const PhoneSizeNavBar = () => {

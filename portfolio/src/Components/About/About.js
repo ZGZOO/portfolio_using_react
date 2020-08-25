@@ -1,4 +1,4 @@
-import React from "react";
+import React from "./node_modules/react";
 import "./About.scss";
 import Avatar from "./Avatar/Avatar";
 import Hi from "./Hi/Hi";

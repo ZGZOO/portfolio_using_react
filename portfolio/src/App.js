@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.scss";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
-import PhoneSizeNavBar from "./components/Nav/PhoneSizeNavBar/PhoneSizeNavBar";
-import Resume from "./components/Resume/Resume";
+import About from "./Components/About/About";
+import Projects from "./Components/Projects/Projects";
+import PhoneSizeNavBar from "./Components/Nav/PhoneSizeNavBar/PhoneSizeNavBar";
+import Resume from "./Components/Resume/Resume";
 
 function App() {
   return (

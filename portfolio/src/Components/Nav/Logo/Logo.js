@@ -1,6 +1,6 @@
-import React from "react";
+import React from "./node_modules/react";
 import "./Logo.css";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink as Link } from "./node_modules/react-router-hash-link";
 
 export default function Logo() {
   return (

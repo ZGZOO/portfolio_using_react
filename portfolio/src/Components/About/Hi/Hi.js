@@ -1,4 +1,4 @@
-import React from "react";
+import React from "./node_modules/react";
 import "./Hi.scss";
 
 export default function Hi() {
