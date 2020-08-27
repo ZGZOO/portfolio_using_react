@@ -1,16 +1,18 @@
 .topnavbar {
-  background-color: #557391;
-  width: 100vw;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* border: yellow 1px solid; */
-  padding: 8px;
+  display: none;
 }
 
-@media only screen and (max-width: 425px) {
-  
+@media only screen and (min-width: 768px) {
+  .topnavbar {
+    background-color: #557391;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: yellow 1px solid; */
+    padding: 8px;
+  }
 }

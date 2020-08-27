@@ -1,11 +1,11 @@
-import React from "./node_modules/react";
+import React from "react";
 import "./Logo.scss";
-import { HashLink as Link } from "./node_modules/react-router-hash-link";
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function Logo() {
   return (
     <div className="logo">
-      <Link to="#home">
+      <Link smooth to="#home">
         <img
           src="https://res.cloudinary.com/headincloud/image/upload/v1593861140/mymemoji.png"
           alt="My Memoji"

@@ -17,8 +17,8 @@ export default function WordNav() {
       >
         Projects
       </Link>
-      <Link smooth to="#contact">
-        Contact
+      <Link smooth to="#resume">
+        Resume
       </Link>
     </nav>
   );

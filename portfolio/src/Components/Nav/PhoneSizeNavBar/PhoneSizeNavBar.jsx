@@ -41,7 +41,7 @@ const PhoneSizeNavBar = () => {
         </Link>
         <Link
           smooth
-          to="#contact"
+          to="#resume"
           className="phoneNavbar__container__link"
           onClick={hideSocialMedia}
         >
