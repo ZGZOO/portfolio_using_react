@@ -9,24 +9,30 @@
 }
 
 .socialmedia {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  margin: 0 auto;
-  //   border: 1px solid red;
-  justify-content: space-around;
-  padding-top: 55px;
+  display: none;
 }
 
-.icons {
-  color: green;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+@media only screen and (min-width: 768px) {
+  .socialmedia {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    //   border: 1px solid red;
+    justify-content: space-around;
+    padding-top: 55px;
+  }
 
-.icons i {
-  font-size: 50px;
+  .icons {
+    color: green;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons i {
+    font-size: 50px;
+  }
 }
