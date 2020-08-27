@@ -51,9 +51,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 17px;
-  padding-right: 17px;
-  padding-left: 17px;
+  padding: 17px;
 }
 
 .see_code_btn a {
@@ -123,30 +121,26 @@
   }
 
   .proj_descript {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
     padding: 17px 0;
   }
 
   .see_code_btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 15px;
   }
 
   .see_code_btn a {
-    text-decoration: none;
-    text-align: center;
-    font-size: 10px;
-    font-weight: 500;
-    color: white;
-    border-radius: 5px;
-    padding: 8px 5px;
-    background-color: #557391;
+    padding: 8px 7px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .see_code_btn {
+    padding: 20px;
   }
 
-  .see_code_btn a i {
-    margin-left: 5px;
+  .see_code_btn a {
+    padding: 10px 20px;
   }
 }
