@@ -77,15 +77,11 @@
 
 @media only screen and (min-width: 768px) {
   .projects {
-    /* border: 1px solid green; */
+    border: 1px solid green;
     padding: 40px;
     padding-top: 0;
     text-align: center;
     background-color: #f5f4ea;
-    /* background-image: url("https://images.unsplash.com/photo-1555181937-efe4e074a301?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed; */
   }
 
   .projects p {
@@ -103,8 +99,11 @@
   .proj_item {
     background-color: #d8d7c6;
     margin: 5px;
-    /* padding: 10px; */
     border-radius: 10px;
+  }
+
+  #proj1 {
+    margin-top: 5px;
   }
 
   .proj_title {
@@ -114,8 +113,8 @@
   }
 
   .proj_img {
-    width: 270px;
-    height: 180px;
+    width: 160px;
+    height: 130px;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,21 +132,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 17px;
-    padding-right: 17px;
-    padding-left: 17px;
+    padding: 15px;
   }
 
   .see_code_btn a {
     text-decoration: none;
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     color: white;
-    /* flex: 1 1; */
     border-radius: 5px;
-    /* margin: 0 10px; */
-    padding: 8px 19.4px;
+    padding: 8px 5px;
     background-color: #557391;
   }
 
